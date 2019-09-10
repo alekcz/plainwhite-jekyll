@@ -183,3 +183,33 @@ main {
 	padding-bottom: 10px;
 	font-weight: normal;
 }
+
+.hero {
+	padding-left: 40px;
+}
+
+.hero > div {
+	margin: 15px 0;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+.main-heading {
+	font-size: 44px;
+	margin-bottom: 20px;
+}
+
+.subheading {
+	margin-bottom: 40px;
+	font-size: 20px;
+}
+
+.tldr {
+	font-weight: 400;
+	background-color: #33B24F;
+	color: #fff;
+	padding: 2px 5px;
+	margin-right: 10px;
+	border-radius: 3px;
+	display: inline !important;
+}

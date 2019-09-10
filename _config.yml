@@ -1,10 +1,15 @@
 title: Alexander Oloo
 author: alekcz
 email: your-email@domain.com
+bio:  Engineer. Designer. Jack of all trades. Great at Product, Clojure, coaching and debugging.
 description: > # this means to ignore newlines until "show_exerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  I solve business problems using design and code. I build APIs, craft user experiences, and mentor designers & devs. My toolbox consists of Coaching, Clojure, Javascript, Vue, Angular, CSS, Product Design, UX, and UI.  
+current: >  
+  I'm currently a Design Director at the Absa Design Office where I work with a bunch of awesome humans. My primary focus is the design, analysis, and optimization of apps on the web.
+previous: >    
+  I had the privilege of lecturing at the University of Pretoria for 4 years, writing code at SAP for 3 years, and building NeedTyres.
+outro: >   
+  Oh yes...and I code a lot. Wanna chat? Hit me up on twitter.
 show_excerpts: true # set to true to show excerpts on the homepage
 
 # Minima date format
@@ -51,6 +56,6 @@ plainwhite:
 # Build settings
 theme: plainwhite
 
-plugins:
+plugins_dir:
   - jekyll-seo-tag
 #  - jekyll-feed

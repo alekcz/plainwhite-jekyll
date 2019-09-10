@@ -6,7 +6,24 @@ layout: default
 <h1 class="page-heading">{{ page.title }}</h1>
 {%- endif -%}
 
-{{ content }}
+<div class="posts hero">
+  <h1 class="main-heading">{{ site.title }}</h1>
+  <h4 class="subheading">@{{ site.author }}</h4>
+  <div class="bio">
+    <strong class="tldr">TL;DR</strong>{{site.bio}}
+  </div>
+  <div class="description">
+      <strong class="tldr">TL;DR</strong>{{site.current}}
+  </div>
+  <div class="description">
+      {{site.previous}}
+  </div>
+  <div class="description">
+      {{site.outro}}
+  </div>
+</div>
+
+{{ content }} 
 
 {%- if site.posts.size > 0 -%}
 <ul class="posts">
