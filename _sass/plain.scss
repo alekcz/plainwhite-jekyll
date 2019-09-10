@@ -96,6 +96,7 @@ main {
 		img {
 			max-width: 200px;
 			border-radius: 100%;
+			cursor: pointer;
 		}
 	}
 }
@@ -186,6 +187,12 @@ main {
 
 .hero {
 	padding-left: 40px;
+}
+
+.title {
+	font-weight: bold;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 .hero > div {
