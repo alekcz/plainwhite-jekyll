@@ -28,6 +28,7 @@ img, embed, object, video {
 a {
 	color: #000;
 	transition: color 0.3s;
+
 	&:hover {
 		color: $linkColor;
 	}
@@ -144,6 +145,10 @@ main {
 .post-title {
 	line-height: 1.2em;
 	font-size: 28px;
+	color: $linkColor;
+	&:hover {
+		text-decoration: underline;
+	}
 }
 .posts, .post-container {
 	list-style-type: none;
@@ -223,8 +228,7 @@ main {
 
 .back {
 	text-decoration-color: transparent;
-}
-
-.back:hover {
-	text-decoration-color: #0A59B0;
+	&:hover {
+		text-decoration-color: $linkColor;
+	}
 }
