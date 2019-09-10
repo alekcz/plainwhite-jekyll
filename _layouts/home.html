@@ -42,6 +42,9 @@ layout: default
         {%- for tag in post.categories -%}
         <li>{{ tag }}</li>
         {%- endfor -%}
+        {%- for tag in post.tags -%}
+        <li>{{ tag }}</li>
+        {%- endfor -%}
       </ul>
       <div class="post-date"><i class="icon-calendar"></i>{{ post.date | date: date_format }}</div>
     </div>
