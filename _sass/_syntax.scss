@@ -12,3 +12,9 @@ pre.highlight, code {
 	line-height: 1.4em;
 	tab-size: 4;
 }
+
+p > code.highlighter-rouge {
+	background-color:rgba(115, 168, 221,0.2);
+	padding: 2px 2px;
+	margin: 0 2px;
+}
