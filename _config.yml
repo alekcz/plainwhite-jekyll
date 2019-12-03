@@ -2,7 +2,7 @@ title: Alexander Oloo
 author: alekcz
 email: your-email@domain.com
 bio:  Engineer. Designer. Jack of all trades. Great at Product, Clojure, coaching and debugging.
-description: > # this means to ignore newlines until "show_exerpts:"
+description: > # this means to ignore newlines until "current:"
   I solve business problems using design and code. I build APIs, craft user experiences, and mentor designers & devs. My toolbox consists of Coaching, Clojure, Javascript, Vue, Angular, CSS, Product Design, UX, and UI.  
 current: >  
   I'm currently a Design Director at the Absa Design Office where I work with a bunch of awesome humans. My primary focus is the design, analysis, and optimization of apps on the web.

@@ -11,21 +11,21 @@
 <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
 
-<meta name="description" content="Engineer. Developer. Designer. Entrepreneur. Brother. Soon to be husband. Hit me up on twitter @alekcz or mail me." />
+<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.bio }}{% endif %}" />
 <meta name="keywords" content='engineer, developer, frontend, backend, designer, mentor, angular, vuejs, clojure, clojurescript, nodejs, node, needtyres, alekcz, alex, oloo, alexander '>
 <meta name="author" content="Alexander Oloo">
                 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="{{relative_url}}">
-<meta name="twitter:title" content="Alexander Oloo">
-<meta name="twitter:description" content="Engineer. Developer. Designer. Entrepreneur. Brother. Soon to be husband. Hit me up on twitter @alekcz or mail me.">
+<meta name="twitter:title" content="{{ page.title | default: site.title}}">
+<meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.bio }}{% endif %}" /> 
 <meta name="twitter:creator" content="@alekcz">
 
 
-<meta property="og:title" content="Alexander Oloo" />
+<meta property="og:title" content="{{ page.title | default: site.title}}" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="{{relative_url}}" />
-<meta property="og:description" content="Engineer. Developer. Designer. Entrepreneur. Brother. Soon to be husband. Hit me up on twitter @alekcz or mail me." /> 
+<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.bio }}{% endif %}" /> 
 <meta property="og:site_name" content="Alexander Oloo" />
     
 <title>{{ page.title | default: site.title }}</title>
