@@ -1,44 +1,40 @@
 ---
 layout: default
 ---
-
-<ul class="posts">
-  {%- if page.title -%}
-  <br/>
-  <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-
-  {{ content }}
-</ul>
-
-{%- if page.media.size > 0 -%}
-<ul class="posts">
-  <li>
-    <h1 id="posts-label">Talks</h1>
-  </li>
-</ul>  
-<ul class="posts talks">
-  {%- for medium in page.media -%}
-    <li class="talk">
-      {%- assign date_format = site.plainwhite.date_format | default: "%b %-d, %Y" -%}
-      <a class="post-link" href="{{ medium.url | relative_url }}">
-        <div class="gallery-thumbnail" style="background-image: url('{{medium.image}}');"></div>
-        <h2 class="post-title gallery-title">{{ medium.title | escape }}</h2>
-      </a>
-      <div class="post-meta">
-        <!--ul class="post-categories">
-          {%- for tag in medium.tags -%}
-          <li>{{ tag }}</li>
-          {%- endfor -%}
-        </ul-->
-        <div class="post-location">{{ medium.location }}</div>
-        <div class="post-date"><i class="icon-calendar"></i>{{ medium.date | date: date_format }}</div>
-      </div>
+<div class="post-container">
+    <a class="back" href="/">< back</a>
+    <a class="post-link" href="{{ page.url | relative_url }}">
+      <h2 class="post-title">{{ page.title | escape }}</h2>
+    </a>
+</div>  
+    {%- if page.media.size > 0 -%}
+    <ul class="posts">
+    <li>
+        <h1 id="posts-label">Talks</h1>
     </li>
-  {%- endfor -%}
-</ul>
+    </ul>  
+    <ul class="posts talks">
+    {%- for medium in page.media -%}
+        <li class="talk">
+        {%- assign date_format = site.plainwhite.date_format | default: "%b %-d, %Y" -%}
+        <a class="post-link" href="{{ medium.url | relative_url }}">
+            <div class="gallery-thumbnail" style="background-image: url('{{medium.image}}');"></div>
+            <h2 class="post-title gallery-title">{{ medium.title | escape }}</h2>
+        </a>
+        <div class="post-meta">
+            <!--ul class="post-categories">
+            {%- for tag in medium.tags -%}
+            <li>{{ tag }}</li>
+            {%- endfor -%}
+            </ul-->
+            <div class="post-location">{{ medium.location }}</div>
+            <div class="post-date"><i class="icon-calendar"></i>{{ medium.date | date: date_format }}</div>
+        </div>
+        </li>
+    {%- endfor -%}
+    </ul>
 
-<!-- <p class="feed-subscribe"><svg class="svg-icon orange">
-		<use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use>
-	</svg><a href="{{ "/feed.xml" | relative_url }}">Subscribe</a></p> -->
+    <!-- <p class="feed-subscribe"><svg class="svg-icon orange">
+            <use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use>
+        </svg><a href="{{ "/feed.xml" | relative_url }}">Subscribe</a></p> -->
 {%- endif -%}
