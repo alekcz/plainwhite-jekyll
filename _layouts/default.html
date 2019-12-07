@@ -9,6 +9,14 @@
 			<a href="/"><img src="{{ "/assets/portfolio.png" | relative_url }}" alt="{{ site.plainwhite.name }}"></a>
 			<a class="title" href="/"><h2>{{ site.plainwhite.name }}</h2></a>
 			<p class="tagline">{{ site.plainwhite.tagline }}</p>
+			{% assign current = page.url | downcase | split: '/' %}
+
+			<ul class="categories">
+				<a href="/" {% if current[1] == null %} class='current'{% endif %}>Home</a>
+				<a href="/dev/" {% if current[1] == 'dev' %} class='current'{% endif %}>Dev</a>
+				<a href="/design/" {% if current[1] == 'design' %} class='current'{% endif %}>Design</a>
+				<a href="/talks/" {% if current[1] == 'talks' %} class='current'{% endif %}>Talks</a>
+			</ul>
 			<ul class="social">
 				<a href="https://github.com/{{ site.plainwhite.social_links.github }}"><li><i class="icon-github-circled"></i></li></a>
 				<a href="https://www.linkedin.com/{{ site.plainwhite.social_links.linkedIn }}"><li><i class="icon-linkedin-squared"></i></li></a>

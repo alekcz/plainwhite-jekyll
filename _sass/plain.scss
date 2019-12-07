@@ -60,6 +60,9 @@ main {
 	@media screen and (max-width: $mobileW) {
 		margin: 0 10px;
 		flex-direction: column;	
+		.main-heading {
+			font-size: 30px;
+		}
 	}
 	@media screen and (max-width: $smallMobileW) {
 		margin: 0;	
@@ -260,4 +263,18 @@ main {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: flex-start;
+}
+
+.categories {
+	list-style-type: none;
+	padding: 0;
+	a {
+		margin: 20px 6px;
+		margin-top: 0;
+	}
+	
+	.current {
+		font-weight: bold;
+		color: #0A59B0;
+	}
 }
