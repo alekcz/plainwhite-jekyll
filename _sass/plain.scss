@@ -80,7 +80,8 @@ main {
 		padding-bottom: 15vh;
 		@media screen and (max-width: $mobileW) {
 			height: auto;	
-			padding: 10vh 0;
+			padding: 0;
+			padding-top: 30px;
 		}
 		@media screen and (min-width: $mobileW + 1) {
 			position: fixed;
@@ -106,6 +107,21 @@ main {
 			border-radius: 100%;
 			cursor: pointer;
 		}
+		@media screen and (max-width: $mobileW) {
+			img {
+				max-width: 120px;
+			}
+			.tagline {
+				margin: 5px 0;
+			}
+			.hide-on-mobile {
+				display: none;
+			}
+		}
+		@media screen and (min-width: $mobileW + 1) {
+			position: fixed;
+		}
+		
 	}
 }
 .social {
@@ -237,6 +253,10 @@ main {
 	text-decoration-color: transparent;
 	&:hover {
 		text-decoration-color: $linkColor;
+	}
+	@media screen and (max-width: $mobileW){
+		position: absolute;
+		top: 10px;
 	}
 }
 
