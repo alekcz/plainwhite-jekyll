@@ -236,3 +236,27 @@ main {
 		text-decoration-color: $linkColor;
 	}
 }
+
+.gallery-thumbnail {
+	min-height: calc( 9 * 260px / 16);
+	max-height: calc( 9 * 260px / 16);
+	min-width: 260px;
+	max-width: 260px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	box-shadow: 0 1px 3px rgba(0,0,0,.2);
+}
+.gallery-title {
+	font-size: 16px;
+}
+.talk {
+	max-width: 280px;
+}
+.talks {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+}
