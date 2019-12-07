@@ -252,11 +252,12 @@ main {
 }
 .talk {
 	max-width: 280px;
+	margin: 20px;
+	margin-left: 0px;
 }
 .talks {
 	display: flex;
-	flex-direction: row;
+	flex-direction: row-reverse;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	width: 100%;
+	justify-content: flex-start;
 }
