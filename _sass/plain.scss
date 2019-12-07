@@ -273,6 +273,11 @@ main {
 .gallery-title {
 	font-size: 16px;
 }
+.no-link, .no-link:hover {
+	text-decoration: none;
+	cursor: default;
+	color: #000;
+}
 .talk {
 	max-width: 280px;
 	margin: 20px;

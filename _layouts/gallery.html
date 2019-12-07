@@ -18,10 +18,17 @@ layout: default
 {%- for medium in page.media -%}
     <li class="talk">
     {%- assign date_format = site.plainwhite.date_format | default: "%b %-d, %Y" -%}
-    <a class="post-link" href="{{ medium.url | relative_url }}">
-        <div class="gallery-thumbnail" style="background-image: url('{{medium.image}}');"></div>
-        <h2 class="post-title gallery-title">{{ medium.title | escape }}</h2>
-    </a>
+    {%- if medium.url -%}
+        <a class="post-link" href="{{ medium.url | relative_url }}">
+            <div class="gallery-thumbnail" style="background-image: url('{{medium.image}}');"></div>
+            <h2 class="post-title gallery-title">{{ medium.title | escape }}</h2>
+        </a>
+    {%- else -%}
+        <div class="post-link">
+            <div class="gallery-thumbnail" style="background-image: url('{{medium.image}}');"></div>
+            <h2 class="post-title gallery-title no-link">{{ medium.title | escape }}</h2>
+        </div>
+    {%- endif -%}
     <div class="post-meta">
         <!--ul class="post-categories">
         {%- for tag in medium.tags -%}
