@@ -273,6 +273,15 @@ main {
 .gallery-title {
 	font-size: 16px;
 }
+.gallery-subtitle {
+	font-size: 14px;
+	margin: 3px 0 15px 0;
+	
+	a, span {
+		text-decoration: none !important;
+		color: #000 !important;
+	}
+}
 .no-link, .no-link:hover {
 	text-decoration: none;
 	cursor: default;

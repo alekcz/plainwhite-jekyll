@@ -29,6 +29,13 @@ layout: default
             <h2 class="post-title gallery-title no-link">{{ medium.title | escape }}</h2>
         </div>
     {%- endif -%}
+    <h2 class="post-title gallery-subtitle">
+        {%- if medium.eventlink -%}
+            <a href="{{medium.eventlink}}">{{ medium.event | escape }}</a>
+        {%- else -%}
+        <span>{{ medium.event | escape }}</span>
+        {%- endif -%}
+    </h2>
     <div class="post-meta">
         <!--ul class="post-categories">
         {%- for tag in medium.tags -%}
