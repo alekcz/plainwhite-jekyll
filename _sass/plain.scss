@@ -25,6 +25,13 @@ img, embed, object, video {
 	max-width: 100%;
 }
 
+blockquote {
+	margin-block-start: 1.6em;
+	margin-block-end: 1.6em;
+	margin-inline-start: 7vw;
+	margin-inline-end: 7vw;
+}
+
 a {
 	color: #000;
 	transition: color 0.3s;
