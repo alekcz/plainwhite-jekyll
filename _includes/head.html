@@ -20,13 +20,22 @@
 <meta name="twitter:title" content="{{ page.title | default: site.title}}">
 <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.bio }}{% endif %}" /> 
 <meta name="twitter:creator" content="@alekcz">
-
+{% if page.hero %}
+    <meta name="twitter:image" content="{{ site.url }}/{{ page.header-img }}" />
+{% else %}
+  <meta name="twitter:image" content="{{ site.url }}/images/hero.jpg" />
+{% endif %}
 
 <meta property="og:title" content="{{ page.title | default: site.title}}" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="{{relative_url}}" />
 <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.bio }}{% endif %}" /> 
 <meta property="og:site_name" content="Alexander Oloo" />
-    
+{% if page.hero %}
+  <meta property="og:image" content="{{ site.url }}/{{ page.header-img }}" />
+{% else %}
+<meta property="og:image" content="{{ site.url }}/images/hero.jpg" />
+{% endif %}
+
 <title>{{ page.title | default: site.title }}</title>
 {% seo %}
